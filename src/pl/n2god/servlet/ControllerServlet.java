@@ -25,38 +25,39 @@ import java.sql.SQLException;
  */
 @WebServlet(name = "ControllerServlet", urlPatterns = "/ControllerServlet")
 public class ControllerServlet extends HttpServlet {
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setCharacterEncoding("UTF-8");
+	 protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
+        String name = request.getParameter("city");
+        String country = request.getParameter("country");
+        String district = request.getParameter("district");
+        String populationString = request.getParameter("population");
+        int population = 0;
+        if (populationString != null && !populationString.isEmpty()) {
+            population = Integer.parseInt(populationString);
+        }
 
-		String name = request.getParameter("city");
-		String country = request.getParameter("country");
-		String district = request.getParameter("district");
-		String populationString = request.getParameter("population");
-		int population = 0;
-		if (populationString != null && !populationString.isEmpty()) {
-			population = Integer.parseInt(populationString);
-		}
+        String option = request.getParameter("option");
+        String message = null;
+        if ("add".equals(option)) {
+            try {
+                DbUtil.insert(name, country, district, population);
+                message = "Do bazy dodano miasto " + name;
+            } catch (SQLException e) {
+                message = "Nie udało się dodać miasta " + name;
+                e.printStackTrace();
+            }
 
-		String option = request.getParameter("option");
-		String message = null;
-		if ("add".equals(option)) {
-			try {
-				DbUtil.insert(name, country, district, population);
-				message = "Do bazy dodano miasto " + name;
-			} catch (SQLException e) {
-				message = "Nie udało się dodać miasta " + name;
-				e.printStackTrace();
-			}
-		} else if ("delete".equals(option)){
-			try {
-				DbUtil.delete(name);
-				message = "Pomyślnie usunięto miasto " + name;
-			} catch (SQLException e) {
-				message = "Nie udało się usunąć miasta " + name;
-				e.printStackTrace();
-			}
-		}
-		request.setAttribute("message", message);
-		request.getRequestDispatcher("message.jsp").forward(request, response);
-	}
+        } else if ("delete".equals(option)) {
+            try {
+                DbUtil.delete(name);
+                message = "Z bazy usunięto miasto " + name;
+            } catch (SQLException e) {
+                e.printStackTrace();
+                message = "Nie udało się usunąć miasta " + name;
+            }
+        }
+        request.setAttribute("message", message);
+        request.getRequestDispatcher("message.jsp").forward(request, response);
+    }
 }

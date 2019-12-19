@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="DataSource:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="05e680fa-d73c-49b7-a13f-131078bf5d15" name="Default Changelist" comment="add message.jsp - confirmation changes in db with message attribute">
+    <list default="true" id="05e680fa-d73c-49b7-a13f-131078bf5d15" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/n2god/data_source/DbUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/n2god/data_source/DbUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/n2god/servlet/ControllerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/n2god/servlet/ControllerServlet.java" afterDir="false" />
@@ -21,6 +26,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1VCOjLJ01bfdp7qr3mMuCZn9YmC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -126,8 +138,24 @@
     <option name="viewStates">
       <list>
         <serviceView>
+          <option name="contentProportion" value="0.1306011" />
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -141,7 +169,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576753743879</updated>
-      <workItem from="1576753745976" duration="5553000" />
+      <workItem from="1576753745976" duration="7218000" />
     </task>
     <task id="LOCAL-00001" summary="change name of ControllerServlet, add index main page">
       <created>1576755435822</created>
@@ -164,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576756552816</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Servlet added">
+      <created>1576759894281</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576759894281</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,16 +208,96 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="change name of ControllerServlet, add index main page" />
     <MESSAGE value="add message.jsp - confirmation changes in db with message attribute" />
-    <option name="LAST_COMMIT_MESSAGE" value="add message.jsp - confirmation changes in db with message attribute" />
+    <MESSAGE value="Servlet added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Servlet added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576755143699">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576755143699" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1576759631727">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1576759893275">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576759631727" />
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576759893275" />
+    <state x="100" y="100" width="1720" height="840" key="DiffContextDialog" timestamp="1576761171514">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="100" y="100" width="1720" height="840" key="DiffContextDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576761171514" />
+    <state width="1590" height="279" key="GridCell.Tab.0.bottom" timestamp="1576761487546">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1590" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576761487546" />
+    <state width="1590" height="279" key="GridCell.Tab.0.center" timestamp="1576761487546">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1590" height="279" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576761487546" />
+    <state width="1590" height="279" key="GridCell.Tab.0.left" timestamp="1576761487546">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1590" height="279" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576761487546" />
+    <state width="1590" height="279" key="GridCell.Tab.0.right" timestamp="1576761487546">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1590" height="279" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576761487546" />
+    <state width="1590" height="279" key="GridCell.Tab.1.bottom" timestamp="1576761487445">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1590" height="279" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576761487445" />
+    <state width="1590" height="279" key="GridCell.Tab.1.center" timestamp="1576761487445">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1590" height="279" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576761487445" />
+    <state width="1590" height="279" key="GridCell.Tab.1.left" timestamp="1576761487444">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1590" height="279" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576761487444" />
+    <state width="1590" height="279" key="GridCell.Tab.1.right" timestamp="1576761487445">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1590" height="279" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576761487445" />
+    <state width="1590" height="279" key="GridCell.Tab.2.bottom" timestamp="1576761487446">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1590" height="279" key="GridCell.Tab.2.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576761487446" />
+    <state width="1590" height="279" key="GridCell.Tab.2.center" timestamp="1576761487445">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1590" height="279" key="GridCell.Tab.2.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576761487445" />
+    <state width="1590" height="279" key="GridCell.Tab.2.left" timestamp="1576761487445">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1590" height="279" key="GridCell.Tab.2.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576761487445" />
+    <state width="1590" height="279" key="GridCell.Tab.2.right" timestamp="1576761487445">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1590" height="279" key="GridCell.Tab.2.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576761487445" />
+    <state width="1590" height="279" key="GridCell.Tab.3.bottom" timestamp="1576761487446">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1590" height="279" key="GridCell.Tab.3.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576761487446" />
+    <state width="1590" height="279" key="GridCell.Tab.3.center" timestamp="1576761487446">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1590" height="279" key="GridCell.Tab.3.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576761487446" />
+    <state width="1590" height="279" key="GridCell.Tab.3.left" timestamp="1576761487446">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1590" height="279" key="GridCell.Tab.3.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576761487446" />
+    <state width="1590" height="279" key="GridCell.Tab.3.right" timestamp="1576761487446">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1590" height="279" key="GridCell.Tab.3.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576761487446" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/pl/n2god/data_source/DbUtil.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

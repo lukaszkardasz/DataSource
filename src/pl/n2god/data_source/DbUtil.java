@@ -18,27 +18,25 @@ import java.sql.Statement;
  * Po zakończeniu operacji wstawiania lub usuwania wszystkie zasoby są zwalniane dzięki wykorzystaniu bloku try-with-resources.
  */
 public class DbUtil {
+
 	public static void insert(String name, String country, String district, int population) throws SQLException {
 		try (Connection connection = ConnectionProvider.getConnection();
 		     Statement statement = connection.createStatement();) {
-
 			String query = String
-					.format("INSERT INTO city(Name, CountryCode, District, Population) VALUES ('%s', '%s', '%s', '%d')",
+					.format("INSERT INTO city(Name, CountryCode, District, Population) VALUES ('%s', '%s', '%s', %d)",
 							name, country, district, population);
-			statement.executeQuery(query);
+			statement.executeUpdate(query);
 		}
 	}
-	public static void delete (String name) throws SQLException {
-		String selectQuery = String
-				.format("SELECT ID FROM city WHERE Name='%s'", name);
 
+	public static void delete(String name) throws SQLException {
+		String selectQuery = String.format("SELECT ID FROM city WHERE Name='%s'", name);
 		try (Connection connection = ConnectionProvider.getConnection();
 		     Statement statement = connection.createStatement();
 		     ResultSet resultSet = statement.executeQuery(selectQuery);) {
-			if (resultSet.next()){
-				String deleteQuery = String
-						.format("DELETE FROM city WHERE ID='%d'", resultSet.getInt(1));
-				statement.executeQuery(deleteQuery);
+			if (resultSet.next()) {
+				String deleteQuery = String.format("DELETE FROM city WHERE ID=%d", resultSet.getInt(1));
+				statement.executeUpdate(deleteQuery);
 			}
 		}
 	}
