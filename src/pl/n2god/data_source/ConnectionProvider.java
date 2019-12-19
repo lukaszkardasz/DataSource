@@ -5,6 +5,7 @@ import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.sql.DataSource;
 import java.sql.Connection;
+import java.sql.SQLException;
 
 /**
  * @author n2god on 19/12/2019
@@ -13,8 +14,8 @@ import java.sql.Connection;
 public class ConnectionProvider {
 	private static DataSource dataSource;
 
-	public static Connection getConnection(){
-		return getDSInstance().
+	public static Connection getConnection() throws SQLException {
+		return getDSInstance().getConnection();
 	}
 
 	private static DataSource getDSInstance() {
