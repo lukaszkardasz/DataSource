@@ -11,7 +11,7 @@ import java.io.IOException;
  * @author n2god on 19/12/2019
  * @project DataSource
  */
-@WebServlet(name = "ControllerServlet")
+@WebServlet(name = "ControllerServlet", urlPatterns = "/ControllerServlet")
 public class ControllerServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
