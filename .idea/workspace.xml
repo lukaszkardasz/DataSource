@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05e680fa-d73c-49b7-a13f-131078bf5d15" name="Default Changelist" comment="" />
+    <list default="true" id="05e680fa-d73c-49b7-a13f-131078bf5d15" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pl/n2god/data_source/ConnectionProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pl/n2god/data_source/DbUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pl/n2god/servlet/ControllerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/n2god/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/META-INF/context.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1VCOjLJ01bfdp7qr3mMuCZn9YmC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -26,6 +41,14 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java\javaEE\DataSource" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java\javaEE\DataSource\web\WEB-INF\lib" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.16" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.16" ALTERNATIVE_JRE_ENABLED="false">
@@ -69,7 +92,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576753743879</updated>
-      <workItem from="1576753745976" duration="242000" />
+      <workItem from="1576753745976" duration="982000" />
     </task>
     <servers />
   </component>
